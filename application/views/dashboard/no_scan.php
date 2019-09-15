@@ -1,0 +1,56 @@
+<!-- <img src="assets/img/!buang/dashboard.png" width="100%"> -->
+<link rel="stylesheet" type="text/css" href="plugins/datatables/datatables.min.css"/>
+<link rel="stylesheet" type="text/css" href="plugins/datatables/scroller.dataTables.min.css"/>
+<div class="panel panel-orange">
+  <div class="panel-heading">
+	<h5 id="judul"><i class="fa fa-table"></i> Data Ketentuan Absensi</h5>
+	<div class="pull-right" id="btn-panel">
+		<a href="<?= base_url('no_scan/'); ?>" class="btn btn-md btn-success">Tabel Data</a>
+		<a href="<?= base_url('no_scan/create'); ?>" class="btn btn-md btn-default">Tambah Data</a>
+	</div>
+  </div>
+  <div class="panel-body">
+      <table class="table table-bordered" id="datatable">
+          <thead>
+              <tr>
+                <th class='with-checkbox' width="2%;"><input type="checkbox" name="check_all" id="check_all"></th>
+                <th>No Scan In</th>
+                <th>No Scan As</th>
+                <th>Late</th>
+                <th>Early</th>
+                <th>Istirahat</th>
+                <th width="130" class="text-center">Action</th>
+              </tr>
+          </thead>
+          <tbody>
+          		<?php foreach ($no_scan_data as $n){ ?>
+	              <tr>
+	                  <td class="with-checkbox"><input type="checkbox" class="checkbox" name="delete_ids[]" value="<?= $n['no_scan_in']; ?>" /></td>
+	                  <td><?= $n['no_scan_in']; ?></td>
+	                  <td><?= $n['no_scan_as']; ?></td>
+	                  <td><?= $n['late']; ?></td>
+	                  <td><?= $n['early']; ?></td>
+	                  <td><?= $n['no_break']; ?></td>
+	                  <td>
+	                    <a href="<?= base_url('no_scan/show/'.$n['no_scan_in']); ?>" class="btn btn-info btn-sm" rel="tooltip" title="Lihat">
+	                    	<i class="fa fa-search"></i>
+	                    </a>
+	                    <a href="<?= base_url('no_scan/edit/'.$n['no_scan_in']); ?>" class="btn btn-warning btn-sm" rel="tooltip" title="Edit">
+	                    	<i class="fa fa-edit"></i>
+	                    </a>
+	                    <a href="<?= base_url('no_scan/delete/'.$n['no_scan_in']); ?>" class="btn btn-danger btn-sm" rel="tooltip" title="Hapus">
+	                    	<i class="fa fa-trash"></i>
+	                    </a>
+	                </td>
+	             </tr>
+	            <?php } ?>
+         </tbody>
+     </table>
+ 	</div>
+</div>
+
+<script src="plugins/datatables/datatables.min.js"></script>
+<script src="plugins/datatables/dataTables.scroller.min.js"></script>
+<script type="text/javascript">
+    $("#datatable").DataTable();
+</script>

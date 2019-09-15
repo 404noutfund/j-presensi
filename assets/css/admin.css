@@ -1,0 +1,143 @@
+@media print {
+	a[href]:after {content:none !important}
+	.td-action {display:none}
+}
+.alert-radius {
+	border-radius: 1em !important;
+}
+.arrow_box {
+	position: relative;
+	background: #c1ecff;
+	padding: 10px;
+}
+.arrow_box:after {
+	right: 100%;
+	top: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(136, 183, 213, 0);
+	border-right-color: #c1ecff;
+	border-width: 10px;
+	margin-top: -10px;
+}
+.arrow_box.blue {
+	background: #c1ecff;
+}
+.arrow_box.blue:after {
+	border-right-color: #c1ecff;
+}
+.arrow_box.green {
+	background: #c1ffd7;
+}
+.arrow_box.green:after {
+	border-right-color: #c1ffd7;
+}
+.arrow_box.fuchsia {
+	background: #ffccea;
+}
+.arrow_box.fuchsia:after {
+	border-right-color: #ffccea;
+}
+.arrow_box.gray {
+	background: #efefef;
+}
+.arrow_box.gray:after {
+	border-right-color: #efefef;
+}
+.bumbum {
+	-webkit-animation: bumbum 1s ease-out;
+	-webkit-animation-iteration-count: 1;
+}
+.bumbum_fast {
+	-webkit-animation: bumbum .5s ease-out;
+	-webkit-animation-iteration-count: 1;
+}
+.move_right {
+	-webkit-animation: move_right .5s ease-out;
+	-webkit-animation-iteration-count: 1;
+}
+.move_left {
+	-webkit-animation: move_left .5s ease-out;
+	-webkit-animation-iteration-count: 1;
+}
+@-webkit-keyframes bumbum {
+	0% {-webkit-transform: scale(1.1, 1.1); opacity: 1.0;}
+	50% {-webkit-transform: scale(1.2, 1.2); opacity: 0.5;}
+	100% {-webkit-transform: scale(1.0, 1.0); opacity: 1.0;}
+}
+@-webkit-keyframes move_right {
+	0% {-webkit-transform: translate(-150px,0); opacity: 0.5;}
+	100% {-webkit-transform: translate(0,0); opacity: 1.0;}
+}
+@-webkit-keyframes move_left {
+	0% {-webkit-transform: translate(150px,0); opacity: 0.5;}
+	100% {-webkit-transform: translate(0,0); opacity: 1.0;}
+}
+.bum,.tiles > a {
+	-webkit-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+	cursor:pointer;
+}
+.bum:hover {
+	-webkit-transform: scale(1.05);
+	-webkit-box-shadow: 0 0 12px 0 rgba(0,0,0,0.15);
+	transform: scale(1.05);
+	box-shadow: 0 0 12px 0 rgba(0,0,0,0.15);
+	opacity:.9;
+}
+.btn-groupp .btn {padding:5px 8px;margin:0 4px 4px 0}
+.btn-grouppp .btn {margin:0 4px 4px 0;float:left}
+.sidebar-menu .sub-nav > li {
+	display: block;
+	vertical-align: middle;
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px transparent;
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-property: transform;
+	transition-property: transform;
+}
+.sidebar-menu .sub-nav > li:hover, .sidebar-menu .sub-nav > li:focus, .sidebar-menu .sub-nav > li:active {
+	-webkit-transform: translateX(8px);
+	transform: translateX(8px);
+}
+.control-label span {font-weight:normal;color:#aaa}
+.gui-options {display:none}
+/*.panel:before {
+content: "";
+position: absolute;
+z-index: 1;
+top: 0;
+left: 0;
+pointer-events: none;
+background-image: linear-gradient(to bottom, rgba(255,255,255,.1), rgba(0,0,0,.04) 100%);
+width: 100%;
+height: 100%;
+}*/
+.mfp-container {
+	padding-left: 15px !important;
+	padding-right: 15px !important;
+}
+.mfp-title {padding-right:0 !important}
+.mfp-bg {z-index:1064 !important}
+.mfp-wrap {z-index:1065 !important}
+.modal-backdrop {z-index:1062}
+.modal {z-index:1063}
+.notif-num {display:none}
+.nw {white-space:nowrap}
+.popover {z-index:1064}
+.tiles {text-align:center;vertical-align:top}
+.tiles > a {width:114px;display:inline-block;vertical-align:top;border-radius:10px;text-align:center;padding:5px 10px 0;margin:0 5px;word-wrap:break-word}
+.tiles > a img {width:90px;height:90px}
+.tiles > a:hover {transform: scale(1.05);background:#FF7;box-shadow: 0 0 12px 0 rgba(0,0,0,0.15);}
+.tiles > a:active {transform: scale(1.0)}
+
+.pad {border-radius:1em;background:rgba(255,255,255,.8);padding:1em}
+.pad-shadow {-webkit-box-shadow:0 0 6px 0 rgba(0,0,0,0.12);-moz-box-shadow:0 0 6px 0 rgba(0,0,0,0.12);box-shadow:0 0 6px 0 rgba(0,0,0,0.12)}
+.pad-inset {-webkit-box-shadow:inset 0 0 6px 0 rgba(0,0,0,0.12);-moz-box-shadow:inset 0 0 6px 0 rgba(0,0,0,0.12);box-shadow:inset 0 0 6px 0 rgba(0,0,0,0.12)}
+.pad h4 {margin-bottom:1.2em}

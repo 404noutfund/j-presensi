@@ -1,0 +1,113 @@
+	a {cursor:pointer;text-decoration:none !important}
+	fieldset {border:1px solid #ddd;border-radius:20px;padding:5px 10px}
+	label {font-weight:500;color:#343a40 !important}
+	.bagi > * {
+		-webkit-column-break-inside: avoid; /* Chrome, Safari */
+		page-break-inside: avoid; /* Theoretically FF 20+ */
+		break-inside: avoid-column; /* IE 11 */
+	}
+	@media (min-width:768px) {
+	.bagi {
+		-webkit-column-gap: 10%;
+		-moz-column-gap: 10%;
+		column-gap: 10%;
+		-webkit-column-count: 2; /* Chrome, Safari, Opera */
+		-moz-column-count: 2; /* Firefox */
+		column-count: 2;
+	}
+	.bagi.dua {
+		-webkit-column-count: 2 !important;
+		-moz-column-count: 2 !important;
+		column-count: 2 !important;
+	}
+	}
+	@media (min-width:992px) {
+	.bagi {
+		-webkit-column-count: 3;
+		-moz-column-count: 3;
+		column-count: 3;
+	}
+	}
+	.box-footer {padding-top:1em}
+	.brand {font-size:30px !important;line-height:.8 !important}
+	.brand small {color:#ddd}
+	.btn {padding-left:18px;padding-right:18px}
+	.btn.btn-sm {padding-left:12px;padding-right:12px}
+	.btn.btn-lg {padding-left:22px;padding-right:22px}
+	.btn-look {padding:8px 12px;font-size:11px;line-height:1.5}
+	.btn-reset {margin-right:12px}
+	.btn-rounded {border-radius:50%}
+	.btn-yuy {transition:all 0.4s ease}
+	.btn-yuy:hover {transform:translate(0,-5px)}
+	.dropdown-menu {z-index:1051}
+	.elm-center {margin-left:auto;margin-right:auto}
+	.form-group .form-control {
+		border-top: 1px solid #ccc !important;
+		border-left: 1px solid #ccc !important;
+		border-right: 1px solid #ccc !important;
+		padding-left: .3em;
+		padding-right: .3em;
+		border-radius: 4px;
+	}
+	.form-group {margin-top:0 !important}
+	.header-filter:after {height:0}
+	.icon {margin-right:8px}
+	.judul {margin-bottom:2em}
+	.label-thin label {font-weight:normal}
+
+	.li-akun a {padding:.2em 1em .2em 0 !important;cursor:pointer}
+	.li-akun h4 {font-weight:500;color:#343a40}
+	.li-akun img {margin-right:1em}
+	.li-akun p {color:#343a40}
+
+	.main {padding:1em; margin-top: -25px;}
+	.menu-grup:hover .karet,.menu-grup:focus .karet {transform:translate(5px)}
+	.menu-grup .karet {float:right;margin-right:-6px;transition:all 0.4s ease}
+
+	.modal-footer .btn {margin-bottom:10px !important}
+	.modal-footer .btn:last-child {margin-right:10px}
+	.modal-title {font-weight:500}
+
+	.navbar-color-on-scroll:not(.navbar-transparent) .brand {font-size:20px !important}
+	.navbar-color-on-scroll:not(.navbar-transparent) .logo {width:36px}
+	.navbar-color-on-scroll {
+		background: rgba(73,155,234,1);
+		background: -moz-linear-gradient(top, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%);
+		background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(73,155,234,1)), color-stop(100%, rgba(32,124,229,1)));
+		background: -webkit-linear-gradient(top, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%);
+		background: -o-linear-gradient(top, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%);
+		background: -ms-linear-gradient(top, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%);
+		background: linear-gradient(to bottom, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', endColorstr='#207ce5', GradientType=0 );
+	}
+	.navbar-color-on-scroll.navbar-transparent {
+		background:none !important;
+	}
+
+	.pp-32 {width:32px}
+	.pp-64 {width:64px}
+	
+	.section-basic {padding:4px 0 40px !important}
+	.td_radios label {margin-right:10px}
+
+	.table-hv tr {cursor:pointer}
+	.table-hv tr:hover td {background-color:aliceblue}
+	.table-le tr td:first-child {text-align:left}
+	.table-lr tr td:last-child {text-align:right}
+	.table-nb > tbody > tr > td {border-top:0}
+	.table-nw tr td {white-space:nowrap}
+	.table-nw-f tr td:first-child {white-space:nowrap}
+	.table-vm td {vertical-align:middle !important}
+	.table-vm td .form-group {padding-bottom:0}
+	.table-vm td .form-control {margin-bottom:0}
+	.table-vt td {vertical-align:top !important}
+	.table-wa {width:auto !important}
+	.table-wu {margin:unset;width:unset}
+
+	.ul_sub {
+		list-style: none;
+		padding-left: 0;
+	}
+	#ms_logout:hover > a {
+		background-color: #f44336;
+	}
